@@ -1,0 +1,114 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  color:white;
+}
+
+html, body{
+  height:100%;
+  width:100%;
+}
+
+#main{
+
+  height:85%;
+  width:100%;
+  background-color: black;
+  display: flex;
+  padding : 5vw 10vw;
+}
+
+#left{
+  height:100%;
+  background-color: #333;
+  width: 50%;
+  /* background-image: url(https://assets.voxcinemas.com/posters/P_HO00010626.jpg); */
+  background-size:cover;
+  background-position:top;
+  object-fit: fill;
+
+}
+
+#right{
+  height: 100%;
+  width:55%;
+  padding: 0 3vw;
+  /* background-color: rgb(134, 88, 19); */
+}
+
+#right h3{
+  font-size: 35px;
+}
+
+#all-songs{
+  /* background-color: red; */
+  height:80%;
+  margin-top: 30px;
+}
+
+.song-card{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  border-top: 1px solid #9f9e9e;
+  padding: 18px 15px;
+}
+.song-card:hover{
+  background-color: red;
+}
+.song-card .part1{
+  display:flex;
+  align-items: center;
+  pointer-events: none;
+
+}
+
+.song-card:nth-last-child(1){
+  border-bottom: 1px solid  #9f9e9e;
+}
+
+.song-card img{
+  height:55px;
+  width:55px;
+  margin-right: 20px;
+}
+
+.song-card h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.song-card h6{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#player{
+  height:15%;
+  width:100%;
+  background-color: rgb(46, 44, 44);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:15px;
+}
+
+#player h3{
+  background-color: red;
+  padding:10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#player h3 i{
+  font-size:24px;
+
+}
+
+#player h3:active{
+   scale :0.93;
+}
